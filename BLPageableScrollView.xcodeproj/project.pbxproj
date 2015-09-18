@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C11DAEA1BA2B282007D1044 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C11DAE91BA2B282007D1044 /* AppDelegate.swift */; };
+		3C11DAEC1BA2B282007D1044 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C11DAEB1BA2B282007D1044 /* ViewController.swift */; };
+		3C11DAEF1BA2B282007D1044 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C11DAED1BA2B282007D1044 /* Main.storyboard */; };
+		3C11DAF11BA2B282007D1044 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C11DAF01BA2B282007D1044 /* Assets.xcassets */; };
+		3C11DAF41BA2B282007D1044 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C11DAF21BA2B282007D1044 /* LaunchScreen.storyboard */; };
+		3C11DAFF1BA2B283007D1044 /* BLPageableScrollViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C11DAFE1BA2B283007D1044 /* BLPageableScrollViewTests.swift */; };
+		3C11DB0A1BA2B283007D1044 /* BLPageableScrollViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C11DB091BA2B283007D1044 /* BLPageableScrollViewUITests.swift */; };
+		3C11DB1A1BA2B4C9007D1044 /* BLPageableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C11DB191BA2B4C9007D1044 /* BLPageableScrollView.swift */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C11DAFB1BA2B283007D1044 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C11DADE1BA2B282007D1044 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C11DAE51BA2B282007D1044;
+			remoteInfo = BLPageableScrollView;
+		};
+		3C11DB061BA2B283007D1044 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C11DADE1BA2B282007D1044 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C11DAE51BA2B282007D1044;
+			remoteInfo = BLPageableScrollView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C11DAE61BA2B282007D1044 /* BLPageableScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLPageableScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C11DAE91BA2B282007D1044 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3C11DAEB1BA2B282007D1044 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3C11DAEE1BA2B282007D1044 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3C11DAF01BA2B282007D1044 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C11DAF31BA2B282007D1044 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3C11DAF51BA2B282007D1044 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C11DAFA1BA2B283007D1044 /* BLPageableScrollViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLPageableScrollViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C11DAFE1BA2B283007D1044 /* BLPageableScrollViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLPageableScrollViewTests.swift; sourceTree = "<group>"; };
+		3C11DB001BA2B283007D1044 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C11DB051BA2B283007D1044 /* BLPageableScrollViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLPageableScrollViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C11DB091BA2B283007D1044 /* BLPageableScrollViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLPageableScrollViewUITests.swift; sourceTree = "<group>"; };
+		3C11DB0B1BA2B283007D1044 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C11DB191BA2B4C9007D1044 /* BLPageableScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLPageableScrollView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C11DAE31BA2B282007D1044 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C11DAF71BA2B283007D1044 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C11DB021BA2B283007D1044 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C11DADD1BA2B282007D1044 = {
+			isa = PBXGroup;
+			children = (
+				3C11DAE81BA2B282007D1044 /* BLPageableScrollView */,
+				3C11DAFD1BA2B283007D1044 /* BLPageableScrollViewTests */,
+				3C11DB081BA2B283007D1044 /* BLPageableScrollViewUITests */,
+				3C11DAE71BA2B282007D1044 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3C11DAE71BA2B282007D1044 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C11DAE61BA2B282007D1044 /* BLPageableScrollView.app */,
+				3C11DAFA1BA2B283007D1044 /* BLPageableScrollViewTests.xctest */,
+				3C11DB051BA2B283007D1044 /* BLPageableScrollViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C11DAE81BA2B282007D1044 /* BLPageableScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				3C11DAE91BA2B282007D1044 /* AppDelegate.swift */,
+				3C11DAEB1BA2B282007D1044 /* ViewController.swift */,
+				3C11DB191BA2B4C9007D1044 /* BLPageableScrollView.swift */,
+				3C11DAED1BA2B282007D1044 /* Main.storyboard */,
+				3C11DAF01BA2B282007D1044 /* Assets.xcassets */,
+				3C11DAF21BA2B282007D1044 /* LaunchScreen.storyboard */,
+				3C11DAF51BA2B282007D1044 /* Info.plist */,
+			);
+			path = BLPageableScrollView;
+			sourceTree = "<group>";
+		};
+		3C11DAFD1BA2B283007D1044 /* BLPageableScrollViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				3C11DAFE1BA2B283007D1044 /* BLPageableScrollViewTests.swift */,
+				3C11DB001BA2B283007D1044 /* Info.plist */,
+			);
+			path = BLPageableScrollViewTests;
+			sourceTree = "<group>";
+		};
+		3C11DB081BA2B283007D1044 /* BLPageableScrollViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3C11DB091BA2B283007D1044 /* BLPageableScrollViewUITests.swift */,
+				3C11DB0B1BA2B283007D1044 /* Info.plist */,
+			);
+			path = BLPageableScrollViewUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C11DAE51BA2B282007D1044 /* BLPageableScrollView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C11DB0E1BA2B283007D1044 /* Build configuration list for PBXNativeTarget "BLPageableScrollView" */;
+			buildPhases = (
+				3C11DAE21BA2B282007D1044 /* Sources */,
+				3C11DAE31BA2B282007D1044 /* Frameworks */,
+				3C11DAE41BA2B282007D1044 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BLPageableScrollView;
+			productName = BLPageableScrollView;
+			productReference = 3C11DAE61BA2B282007D1044 /* BLPageableScrollView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3C11DAF91BA2B283007D1044 /* BLPageableScrollViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C11DB111BA2B283007D1044 /* Build configuration list for PBXNativeTarget "BLPageableScrollViewTests" */;
+			buildPhases = (
+				3C11DAF61BA2B283007D1044 /* Sources */,
+				3C11DAF71BA2B283007D1044 /* Frameworks */,
+				3C11DAF81BA2B283007D1044 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C11DAFC1BA2B283007D1044 /* PBXTargetDependency */,
+			);
+			name = BLPageableScrollViewTests;
+			productName = BLPageableScrollViewTests;
+			productReference = 3C11DAFA1BA2B283007D1044 /* BLPageableScrollViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3C11DB041BA2B283007D1044 /* BLPageableScrollViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C11DB141BA2B283007D1044 /* Build configuration list for PBXNativeTarget "BLPageableScrollViewUITests" */;
+			buildPhases = (
+				3C11DB011BA2B283007D1044 /* Sources */,
+				3C11DB021BA2B283007D1044 /* Frameworks */,
+				3C11DB031BA2B283007D1044 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C11DB071BA2B283007D1044 /* PBXTargetDependency */,
+			);
+			name = BLPageableScrollViewUITests;
+			productName = BLPageableScrollViewUITests;
+			productReference = 3C11DB051BA2B283007D1044 /* BLPageableScrollViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C11DADE1BA2B282007D1044 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = FindYAM;
+				TargetAttributes = {
+					3C11DAE51BA2B282007D1044 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					3C11DAF91BA2B283007D1044 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 3C11DAE51BA2B282007D1044;
+					};
+					3C11DB041BA2B283007D1044 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 3C11DAE51BA2B282007D1044;
+					};
+				};
+			};
+			buildConfigurationList = 3C11DAE11BA2B282007D1044 /* Build configuration list for PBXProject "BLPageableScrollView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3C11DADD1BA2B282007D1044;
+			productRefGroup = 3C11DAE71BA2B282007D1044 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C11DAE51BA2B282007D1044 /* BLPageableScrollView */,
+				3C11DAF91BA2B283007D1044 /* BLPageableScrollViewTests */,
+				3C11DB041BA2B283007D1044 /* BLPageableScrollViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C11DAE41BA2B282007D1044 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C11DAF41BA2B282007D1044 /* LaunchScreen.storyboard in Resources */,
+				3C11DAF11BA2B282007D1044 /* Assets.xcassets in Resources */,
+				3C11DAEF1BA2B282007D1044 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C11DAF81BA2B283007D1044 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C11DB031BA2B283007D1044 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C11DAE21BA2B282007D1044 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C11DAEC1BA2B282007D1044 /* ViewController.swift in Sources */,
+				3C11DAEA1BA2B282007D1044 /* AppDelegate.swift in Sources */,
+				3C11DB1A1BA2B4C9007D1044 /* BLPageableScrollView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C11DAF61BA2B283007D1044 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C11DAFF1BA2B283007D1044 /* BLPageableScrollViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C11DB011BA2B283007D1044 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C11DB0A1BA2B283007D1044 /* BLPageableScrollViewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C11DAFC1BA2B283007D1044 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C11DAE51BA2B282007D1044 /* BLPageableScrollView */;
+			targetProxy = 3C11DAFB1BA2B283007D1044 /* PBXContainerItemProxy */;
+		};
+		3C11DB071BA2B283007D1044 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C11DAE51BA2B282007D1044 /* BLPageableScrollView */;
+			targetProxy = 3C11DB061BA2B283007D1044 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3C11DAED1BA2B282007D1044 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C11DAEE1BA2B282007D1044 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3C11DAF21BA2B282007D1044 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C11DAF31BA2B282007D1044 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3C11DB0C1BA2B283007D1044 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C11DB0D1BA2B283007D1044 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C11DB0F1BA2B283007D1044 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BLPageableScrollView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = findyam.BLPageableScrollView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3C11DB101BA2B283007D1044 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BLPageableScrollView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = findyam.BLPageableScrollView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3C11DB121BA2B283007D1044 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BLPageableScrollViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = findyam.BLPageableScrollViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BLPageableScrollView.app/BLPageableScrollView";
+			};
+			name = Debug;
+		};
+		3C11DB131BA2B283007D1044 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BLPageableScrollViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = findyam.BLPageableScrollViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BLPageableScrollView.app/BLPageableScrollView";
+			};
+			name = Release;
+		};
+		3C11DB151BA2B283007D1044 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BLPageableScrollViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = findyam.BLPageableScrollViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BLPageableScrollView;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		3C11DB161BA2B283007D1044 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BLPageableScrollViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = findyam.BLPageableScrollViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BLPageableScrollView;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C11DAE11BA2B282007D1044 /* Build configuration list for PBXProject "BLPageableScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C11DB0C1BA2B283007D1044 /* Debug */,
+				3C11DB0D1BA2B283007D1044 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C11DB0E1BA2B283007D1044 /* Build configuration list for PBXNativeTarget "BLPageableScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C11DB0F1BA2B283007D1044 /* Debug */,
+				3C11DB101BA2B283007D1044 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C11DB111BA2B283007D1044 /* Build configuration list for PBXNativeTarget "BLPageableScrollViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C11DB121BA2B283007D1044 /* Debug */,
+				3C11DB131BA2B283007D1044 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C11DB141BA2B283007D1044 /* Build configuration list for PBXNativeTarget "BLPageableScrollViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C11DB151BA2B283007D1044 /* Debug */,
+				3C11DB161BA2B283007D1044 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C11DADE1BA2B282007D1044 /* Project object */;
+}
