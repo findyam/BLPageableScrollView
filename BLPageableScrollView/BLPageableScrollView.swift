@@ -41,6 +41,12 @@ public class BLPageableScrollView: UIView, UIScrollViewDelegate {
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         return scrollView
         }()
+    
+    lazy var bridgeView: BLTouchBridgeView! = {
+        let bridgeView = BLTouchBridgeView(frame: CGRectZero)
+        bridgeView.translatesAutoresizingMaskIntoConstraints = false
+        return bridgeView
+        }()
 
     var index: Int = 0;
     weak public var dataSource: BLPageableScrollViewDataSource?
@@ -172,7 +178,23 @@ public class BLPageableScrollView: UIView, UIScrollViewDelegate {
     
     func setup() {
         self.translatesAutoresizingMaskIntoConstraints = false
+        
         self.scrollView.delegate = self
+        self.bridgeView.receiver = self.scrollView
+        self.addSubview(self.bridgeView)
+        
+        let bridgeViewTopConstraint = NSLayoutConstraint(item: self.bridgeView, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Top, multiplier: 1, constant: 0)
+        
+        let bridgeViewBottomConstraint = NSLayoutConstraint(item: self.bridgeView, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Bottom, multiplier: 1, constant: 0)
+        
+        let bridgeViewLeadingConstraint = NSLayoutConstraint(item:self.bridgeView , attribute: NSLayoutAttribute.Leading, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Leading, multiplier: 1, constant: 0)
+        let bridgeViewTrailingConstraint = NSLayoutConstraint(item:self.bridgeView , attribute: NSLayoutAttribute.Trailing, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Trailing, multiplier: 1, constant: 0)
+        
+        let bridgeViewConstraints = [bridgeViewTopConstraint, bridgeViewBottomConstraint, bridgeViewLeadingConstraint, bridgeViewTrailingConstraint]
+        self.addConstraints(bridgeViewConstraints)
+
+        
+        
         self.addSubview(self.scrollView)
         let scrollViewTopConstraint = NSLayoutConstraint(item: self.scrollView, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Top, multiplier: 1, constant: 0)
         let scrollViewCenterXConstraint = NSLayoutConstraint(item: self.scrollView, attribute: NSLayoutAttribute.CenterX, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.CenterX, multiplier: 1, constant: 0)
@@ -231,6 +253,23 @@ public class BLPageableScrollView: UIView, UIScrollViewDelegate {
     public func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         self.startTimer()
     }
+}
+
+class BLTouchBridgeView: UIView {
+    weak var receiver: UIView?
     
+    override func hitTest(point: CGPoint, withEvent event: UIEvent?) -> UIView? {
+        if (self.receiver != nil && self.pointInside(point, withEvent: event)) {
+            let newPoint = self.convertPoint(point, toView: self.receiver)
+            let view: UIView? = self.receiver!.hitTest(newPoint, withEvent: event)
+            if view != nil {
+                return view
+            } else {
+                return self.receiver
+            }
+        }
+        return super.hitTest(point, withEvent: event)
+    }
+
     
 }

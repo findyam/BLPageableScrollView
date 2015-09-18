@@ -41,13 +41,11 @@ class ViewController: UIViewController, BLPageableScrollViewDataSource {
     func pageableScrollView(pageableScrollView: BLPageableScrollView, viewAtIndex index: Int) -> UIView {
         let view: UIView = pageableScrollView.dequeueReusableViewWithIdentifier("view")!
         view.backgroundColor = self.colors[index]
-        
         return view
     }
     
     func numberOfPagesInPageableScrollView(pageableScrollView: BLPageableScrollView) -> Int {
         return 3
-    }
-
+    }    
 }
 
