@@ -29,12 +29,22 @@ private extension UIView {
     }
 }
 
+class BLScrollView: UIScrollView {
+    override func pointInside(point: CGPoint, withEvent event: UIEvent?) -> Bool {
+        if (((point.x <= -self.frame.width) || point.x >= self.frame.width) && (point.y <= self.frame.height)) {
+            return true
+        } else {
+            return false
+        }
+    }
+}
+
 @IBDesignable
 
 public class BLPageableScrollView: UIView, UIScrollViewDelegate {
     
-    lazy var scrollView: UIScrollView! = {
-        let scrollView = UIScrollView(frame: CGRectZero)
+    lazy var scrollView: BLScrollView! = {
+        let scrollView = BLScrollView(frame: CGRectZero)
         scrollView.pagingEnabled = true
         scrollView.backgroundColor = UIColor.yellowColor()
         scrollView.clipsToBounds = false
@@ -104,6 +114,9 @@ public class BLPageableScrollView: UIView, UIScrollViewDelegate {
                 if view.bl_reusedIdentifier != nil {
                     var reuseSet =  self.reusedViews[view.bl_reusedIdentifier!]
                     reuseSet?.insert(view)
+                    for gesture in view.gestureRecognizers! {
+                        view.removeGestureRecognizer(gesture)
+                    }
                 }
             }
             
@@ -115,23 +128,39 @@ public class BLPageableScrollView: UIView, UIScrollViewDelegate {
 
             let privousView: UIView! = self.dataSource?.pageableScrollView(self, viewAtIndex: privousIndex)
             privousView.frame = CGRectMake(self.scrollView.frame.size.width, 0, self.scrollView.frame.size.width, self.scrollView.frame.size.height)
+            privousView.tag = privousIndex
             self.scrollView.addSubview(privousView)
+            self.addGestureForView(privousView)
             
             let currentView: UIView! = self.dataSource?.pageableScrollView(self, viewAtIndex: self.index)
             currentView.frame = CGRectMake(2 * self.scrollView.frame.size.width, 0, self.scrollView.frame.size.width, self.scrollView.frame.size.height)
             self.scrollView.addSubview(currentView)
+            currentView.tag = self.index
+            self.addGestureForView(currentView)
+            
             let nextView: UIView! = self.dataSource?.pageableScrollView(self, viewAtIndex: nextIndex)
             nextView.frame = CGRectMake(3 * self.scrollView.frame.size.width, 0, self.scrollView.frame.size.width, self.scrollView.frame.size.height)
             self.scrollView.addSubview(nextView)
+            nextView.tag = nextIndex
+            self.addGestureForView(nextView)
             
             let firstView: UIView! = self.dataSource?.pageableScrollView(self, viewAtIndex: firstIndex)
             firstView.frame = CGRectMake(0, 0, self.scrollView.frame.width, self.scrollView.frame.height)
             self.scrollView.addSubview(firstView)
+            firstView.tag = firstIndex
+            self.addGestureForView(firstView)
             
             let lastView: UIView! = self.dataSource?.pageableScrollView(self, viewAtIndex: lastIndex)
             lastView.frame = CGRectMake(4 * self.scrollView.frame.width, 0, self.scrollView.frame.width, self.scrollView.frame.height)
             self.scrollView.addSubview(lastView)
+            lastView.tag = lastIndex
+            self.addGestureForView(lastView)
         }
+    }
+    
+    public func addGestureForView(view: UIView) {
+        let tapGesture = UITapGestureRecognizer(target: self, action: Selector("handleTapGesture:"))
+        view.addGestureRecognizer(tapGesture)
     }
     
     public func registerNib(nib: UINib?, forViewReuseIdentifier identifier: String) {
@@ -168,6 +197,10 @@ public class BLPageableScrollView: UIView, UIScrollViewDelegate {
     
 
     // MARK: privite methods
+    
+    func handleTapGesture(sender: UITapGestureRecognizer) {
+        self.dataSource?.pageableScrollView(self, didSelectAtIndex: sender.view!.tag)
+    }
     
     func setup() {
         self.translatesAutoresizingMaskIntoConstraints = false

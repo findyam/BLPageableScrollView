@@ -35,7 +35,7 @@ class ViewController: UIViewController, BLPageableScrollViewDataSource {
     // MARK: BLPageableScrollViewDataSource methods
     
     func pageableScrollView(pageableScrollView: BLPageableScrollView, didSelectAtIndex index: Int) {
-        
+        print(index)
     }
     
     func pageableScrollView(pageableScrollView: BLPageableScrollView, viewAtIndex index: Int) -> UIView {
@@ -47,5 +47,8 @@ class ViewController: UIViewController, BLPageableScrollViewDataSource {
     func numberOfPagesInPageableScrollView(pageableScrollView: BLPageableScrollView) -> Int {
         return 3
     }    
+    @IBAction func testButton(sender: AnyObject) {
+        print("hfhfhfh")
+    }
 }
 

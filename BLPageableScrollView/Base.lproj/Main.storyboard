@@ -21,12 +21,21 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXO-DW-JOe">
+                                <rect key="frame" x="252" y="302" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="testButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jVH-gY-pOO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="t2Q-gI-QdY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Pr4-Oy-8ms"/>
+                            <constraint firstItem="JXO-DW-JOe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XVG-GN-RBx"/>
                             <constraint firstItem="t2Q-gI-QdY" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1/4" id="gCu-3f-0T9"/>
                             <constraint firstAttribute="trailing" secondItem="t2Q-gI-QdY" secondAttribute="trailing" id="njA-e2-BmB"/>
+                            <constraint firstItem="JXO-DW-JOe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pVv-TI-yQT"/>
                             <constraint firstItem="t2Q-gI-QdY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zcb-ln-rVc"/>
                         </constraints>
                     </view>
